@@ -1,0 +1,27 @@
+* text=auto
+
+# Makefile
+Makefile text
+
+# debian files
+debian/** text eol=lf
+
+# Udev rules
+*.rules    text eol=lf
+*.rules.j2 text eol=lf
+
+# Scripts and batch files
+*.sh   text eol=lf
+*.bash text eol=lf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Documentation
+*README* text
+*.md     text
+*.txt    text
+
+# Git files
+*.gitattributes text export-ignore
+.gitignore      text export-ignore

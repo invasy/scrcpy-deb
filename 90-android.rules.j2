@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="ttyACM*", SUBSYSTEM=="tty", ATTRS{idVendor}=="{{ android_vendor }}", ATTRS{idProduct}=="{{ android_product }}", ATTRS{serial}=="{{ android_serial }}", ENV{SYSTEMD_USER_WANTS}+="scrcpy.service"

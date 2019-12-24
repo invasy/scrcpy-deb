@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: scrcpy
+Upstream-Contact: Vasiliy Polyakov <invasy.v@gmail.com>
+Source: https://github.com/Genymobile/scrcpy
+Copyright: Copyright (C) 2018 Genymobile
+Copyright: Copyright (C) 2018-2019 Romain Vimont
+License: Apache-2.0

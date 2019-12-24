@@ -1,0 +1,7 @@
+[Unit]
+Description=Provides display and control of Android devices connected on USB (or over TCP/IP)
+Documentation=man:scrcpy(1)
+Documentation=https://github.com/Genymobile/scrcpy/blob/master/README.md
+
+[Service]
+ExecStart=/usr/bin/scrcpy

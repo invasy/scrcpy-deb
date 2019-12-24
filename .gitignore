@@ -1,0 +1,6 @@
+debian/*.debhelper*
+debian/*.substvars
+debian/scrcpy/
+debian/files
+scrcpy-*/
+*.deb
