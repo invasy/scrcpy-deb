@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# vim: ft=makefile:
+export DH_QUIET=1
+export ANDROID_HOME=$(HOME)/android/sdk
+
+override_dh_auto_configure:
+	meson --prefix=/usr --buildtype release --strip -Db_lto=true x
+
+override_dh_auto_build:
+	ninja -Cx
+
+override_dh_auto_install:
+	DESTDIR='$(CURDIR)/debian/scrcpy' ninja -Cx install
+
+override_dh_auto_clean:
+	ninja -Cx clean
+
+override_dh_auto_test:
+override_dh_installdocs:
+override_dh_installchangelogs:
+
+ifndef FAKEROOTKEY
+clean binary:
+	fakeroot dh $@ --parallel
+endif
+
+%:
+	dh $@ --parallel

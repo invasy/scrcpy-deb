@@ -1,0 +1,18 @@
+Source: scrcpy
+Section: utils
+Priority: optional
+Maintainer: Vasiliy Polyakov <invasy.v@gmail.com>
+Standards-Version: 4.0.0
+Build-Depends: gcc, git, pkg-config, meson, ninja-build,
+ libavcodec-dev, libavformat-dev, libavutil-dev, libsdl2-dev, openjdk-8-jdk
+Homepage: https://github.com/Genymobile/scrcpy
+Vcs-Browser: https://github.com/Genymobile/scrcpy
+
+Package: scrcpy
+Architecture: amd64
+Section: utils
+Priority: optional
+Depends: ${shlibs:Depends}, adb, ffmpeg, libsdl2-2.0-0
+Homepage: https://github.com/Genymobile/scrcpy
+Description: Provides display and control of Android devices connected on USB (or over TCP/IP)
+ It does not require any root access. It works on GNU/Linux, Windows and macOS.
